@@ -11,7 +11,7 @@
     ec2: image='{{{ ami_id }}}'
          instance_type="{{=<% %>=}}{{ instance_type }}<%={{ }}=%>"
          keypair='{{{ keypair }}}'
-         instance_tags='{"Environment":"{{{ environment }}}","Class":"{{{ className }}}-immutable","Name":"{{{ appName }}} (immutable)"}'
+         instance_tags='{"Name":"{{{ appName }}} (immutable)"}'
          region='{{=<% %>=}}{{ region }}<%={{ }}=%>'
          aws_zone='{{=<% %>=}}{{ region }}<%={{ }}=%>{{=<% %>=}}{{ aws_zone }}<%={{ }}=%>'
          group='{{{ security_group }}}'

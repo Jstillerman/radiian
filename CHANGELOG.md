@@ -14,6 +14,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Changes mustache tags in order **not** to escape HTML special characters
 - Simplifies `Generator.js`
 
+### Removed
+- Removes the environment, class instance, and old app name questions
+  and their corresponding template variables
+
 ### Updated
 - Dependencies
 
