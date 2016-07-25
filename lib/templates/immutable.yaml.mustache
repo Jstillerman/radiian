@@ -41,6 +41,12 @@
   user: {{{ remote_user }}}
   sudo: yes
   roles:
+  {{#roles.Nginx}}
+    - nginx
+  {{/roles.Nginx}}
+  {{#roles['File Transfer']}}
+    - push-code
+  {{/roles['File Transfer']}}
     - {{{ appName }}}
 
 - hosts: ec2hosts
